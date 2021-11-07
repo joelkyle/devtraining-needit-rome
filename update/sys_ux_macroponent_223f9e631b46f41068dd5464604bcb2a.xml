@@ -865,6 +865,24 @@
                   "operation" : null,
                   "targetId" : "ckvffteddonaaaabblccaiijjlccueehicaa",
                   "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : {
+                        "propName" : "listQuery",
+                        "value" : "active=true"
+                      }
+                    },
+                    "sysId" : "32408b42ff7a10109046e490703bf176"
+                  },
+                  "operation" : null,
+                  "targetId" : "ckvpviiuddvaaaaddwddiiiiggjnccijgcm",
+                  "type" : "EVENT"
                 } ]
               } ],
               "slot" : "Row 1",
@@ -878,7 +896,9 @@
                 "value" : ""
               },
               "isNonDestructive" : false,
-              "styles" : { }
+              "styles" : {
+                "padding-right" : "30px"
+              }
             }, {
               "elementId" : "needits_awaiting_approval_button",
               "elementLabel" : "NeedIts Awaiting Approval Button",
@@ -979,7 +999,9 @@
                 "value" : ""
               },
               "isNonDestructive" : false,
-              "styles" : { }
+              "styles" : {
+                "padding-right" : "30px"
+              }
             }, {
               "elementId" : "closed_needits_button",
               "elementLabel" : "Closed NeedIts",
@@ -1271,7 +1293,7 @@
             "layout" : {
               "default" : {
                 "children" : null,
-                "items" : [{"slotName":"Row 1","rules":{"flex":"1","margin-bottom":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"Row 1","rules":{"flex":"1","margin-bottom":"1rem"},"styles":{"display":"flex","flex-direction":"row"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
                 "root" : null,
                 "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
                 "styles" : null,
@@ -1290,8 +1312,8 @@
             "width" : "100%"
           }
         }, {
-          "elementId" : "all_active_needits_list",
-          "elementLabel" : "All Active NeedIts List",
+          "elementId" : "needits_list",
+          "elementLabel" : "NeedIts List",
           "propertyValues" : {
             "listTitle" : {
               "type" : "STATE_BINDING",
@@ -1800,10 +1822,37 @@
         <data>[ ]</data>
         <dispatched_events>128f29ad07fa7010d4b4fa4d7c1ed072</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
-        <handled_events>eda469972fdf3050cfb0ffecf699b6c4</handled_events>
+        <handled_events>60c5b1732f633010ba3851172799b614</handled_events>
         <interactions/>
         <interfaces/>
         <internal_event_mappings>{
+  "x_58872_needit.UPDATE_LIST_QUERY_AND_TITLE" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "propName" : {
+            "type" : "JSON_LITERAL",
+            "value" : "listQuery"
+          },
+          "value" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "heListQuery" ]
+            }
+          }
+        }
+      },
+      "sysId" : "32408b42ff7a10109046e490703bf176"
+    },
+    "operation" : null,
+    "targetId" : "ckvpvddsbbpaaaaddqddiiiiggggffccsghhal",
+    "type" : "EVENT"
+  } ],
   "x_58872_needit.UPADTE_LIST_QUERY_AND_TITLE" : [ {
     "broker" : null,
     "clientScript" : {
@@ -1936,13 +1985,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-24 18:11:54</sys_created_on>
         <sys_id>223f9e631b46f41068dd5464604bcb2a</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_223f9e631b46f41068dd5464604bcb2a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-25 16:08:01</sys_updated_on>
+        <sys_updated_on>2021-11-07 23:29:09</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
